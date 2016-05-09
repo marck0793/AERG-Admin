@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
-    <body>
+    <head>
+        <title>{{trans('general.titulo')}}</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/validaciones_login.js"></script>
+        <script type="text/javascript" src="js/funciones_varias.js"></script>
+        <link rel="shortcut icon" href="imagenes/favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+        <link rel="stylesheet" href="{{ url('/') }}./css/estilo_principal.css" type="text/css"/>
+    </head>
+     <body Style="background-color: #D7D7D7;">
         <div class="contenedor">
 
         <section style="float:right;">
-            <form method="post" action="default.php" style="display:inline;">
+            <form method="get" action="{{ url('lang', ['es']) }}" style="display:inline;">
                 <input type="hidden" name="idioma" value="es">
                 <input type="submit" title=" Idioma Español" value="" style="height:24px; width:34px;  background-image: url('imagenes/es.png');">
             </form>
 
-            <form method="post" action="default.php" style="display:inline;">
-                <input type="hidden" name="idioma" value="en">
+            <form method="get" action="{{ url('lang', ['en']) }}" style="display:inline;">
                 <input type="submit" title=" English Language" value="" style="height:24px; width:34px;  background-image: url('imagenes/en.png');">
             </form >
         </section>
 
-        <img src="imagenes/A&M-VENTAS.png">
+        <img src="{{url('/')}}./imagenes/A&M-VENTAS.png">
         <br><br>
 
         <section class="login">

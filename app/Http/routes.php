@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('default');
-});
+
+	Route::get('/', function () {
+	    return view('default');
+	});
+
+	Route::get('index', function() {
+	    return view('inventario');
+	});
+
+	Route::get('lang/{lang}', function ($lang) {
+	        session(['lang' => $lang]);
+	        return \Redirect::back();
+	    })->where([
+	        'lang' => 'en|es'
+	    ]);

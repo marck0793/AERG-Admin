@@ -12,15 +12,13 @@ return [
     | these language lines according to your application's requirements.
     |
     */
+    'iniciodesesion' => 'Iniciar Sesión',
+    'idioma' => 'Idioma',
+    'cedula' => 'Cédula',
+    'contraseña' => 'Contraseña',
+    'cerrarsesion' => 'Cerrar Sesion',
 
-    'iniciodesesion' => 'Log In',
-    'idioma' => 'Language',
-    'cedula' => 'Id',
-    'contraseña' => 'Password',
-    'cerrarsesion' => 'Log Out',
-
-
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'failed'   => 'Estas credenciales no coinciden con nuestros registros.',
+    'throttle' => 'Demasiados intentos de acceso. Por favor intente nuevamente en :seconds segundos.',
 
 ];
