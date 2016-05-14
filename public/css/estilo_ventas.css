@@ -1,0 +1,43 @@
+.seccionVenta{
+	padding-left: 1%; 
+  	margin-right: 50%;
+}
+
+.tablaVentas{
+	background-color: white;
+    margin-top:2%;
+	margin-left:1%;
+	height:60%;
+	width: 60%; 
+	position: absolute;
+}
+
+table {
+        width: 100%;
+    }
+
+thead, tbody, tr, td, th { display: block; }
+
+tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+tbody {
+    height: 76.7%;
+    width: 100%;
+    position: absolute;
+    overflow-y: auto;
+}
+
+.table{
+    margin-bottom: 3.5%;
+}
+
+
+tbody td, thead th {
+    width: 15%;
+    float: left;
+}
