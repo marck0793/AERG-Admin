@@ -19,6 +19,7 @@
 	Route::get('menu', function() {
 	    return view('inventario');
 	});
+	Route::get('validar/{id}', 'controlUsuario@validar');
 
 	Route::get('lang/{lang}', function ($lang) {
 	        session(['lang' => $lang]);
