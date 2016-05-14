@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<?
+    if($_COOKIE["idioma"]==""){
+        setcookie("idioma", 'es', time() + (60 * 60 * 24 * 365250) );
+        
+    }
+    ?>
 <html>
     <head>
         <title>{{trans('general.titulo')}}</title>
@@ -50,8 +56,10 @@
                     <button type="button" class="botonNormal" onclick="validarUser('{{trans('auth.idioma')}}')">
                         {{trans('botones.btnlogin')}}
                     </button>    
+                     
                 </center>
             </form>
+
         </section>
 </div>
 </body>

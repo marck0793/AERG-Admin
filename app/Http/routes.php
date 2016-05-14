@@ -16,7 +16,7 @@
 	    return view('default');
 	});
 
-	Route::get('index', function() {
+	Route::get('menu', function() {
 	    return view('inventario');
 	});
 
